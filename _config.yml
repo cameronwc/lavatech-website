@@ -2,7 +2,7 @@
 title: "LavaTech Solutions"
 description: "Local tech services in Lava Hot Springs, Idaho — 3D printing, Starlink installation, computer repair, WiFi troubleshooting, and IT support."
 url: "https://lavatech.solutions"
-baseurl: ""
+baseurl: "/lavatech-website"
 lang: "en"
 
 # Business Info
