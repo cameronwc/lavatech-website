@@ -1,0 +1,32 @@
+---
+layout: page
+title: Blog
+subtitle: "Tech tips, project stories, and local updates"
+permalink: /blog/
+description: "The LavaTech Solutions blog — tech tips for rural Idaho, project stories, and updates from Lava Hot Springs' local tech provider."
+---
+
+<div class="blog-grid">
+  {% for post in site.posts %}
+    <article class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          {% if post.categories.size > 0 %}
+            <span class="meta-sep">&middot;</span>
+            {% for cat in post.categories %}
+              <span class="category-tag">{{ cat }}</span>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read More &rarr;</a>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+{% if site.posts.size == 0 %}
+  <p class="empty-state">No blog posts yet. Check back soon!</p>
+{% endif %}

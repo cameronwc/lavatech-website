@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<article class="case-study">
+  <header class="case-study-hero">
+    <div class="container">
+      <span class="case-study-industry-tag">{{ page.industry }}</span>
+      <h1>{{ page.title }}</h1>
+      <p class="case-study-subtitle">{{ page.summary }}</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="case-study-body">
+      {% if page.challenge %}
+        <section class="case-study-section">
+          <h2>The Challenge</h2>
+          <p>{{ page.challenge }}</p>
+        </section>
+      {% endif %}
+
+      {% if page.solution %}
+        <section class="case-study-section">
+          <h2>Our Solution</h2>
+          <p>{{ page.solution }}</p>
+        </section>
+      {% endif %}
+
+      {% if page.results %}
+        <section class="case-study-section">
+          <h2>The Results</h2>
+          <p>{{ page.results }}</p>
+        </section>
+      {% endif %}
+
+      <!-- Additional content from the markdown body -->
+      {% if content != "" %}
+        <section class="case-study-section">
+          {{ content }}
+        </section>
+      {% endif %}
+
+      <div class="case-study-cta">
+        <h3>Have a similar challenge?</h3>
+        <p>Let's talk about how LavaTech Solutions can help.</p>
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+
+    <a href="{{ '/case-studies/' | relative_url }}" class="back-link">&larr; Back to Case Studies</a>
+  </div>
+</article>

@@ -1,0 +1,21 @@
+---
+layout: page
+title: Case Studies
+subtitle: "Real problems we've solved for local clients"
+permalink: /case-studies/
+description: "See how LavaTech Solutions has helped local businesses and residents in Lava Hot Springs with technology challenges."
+---
+
+<div class="case-studies-grid">
+  {% for study in site.case_studies %}
+    {% include case-study-card.html study=study %}
+  {% endfor %}
+</div>
+
+<!-- PLACEHOLDER: Add more case studies by creating new markdown files in _case_studies/ -->
+
+<div class="section-cta">
+  <h3>Want to be our next success story?</h3>
+  <p>Every project starts with a conversation. Tell us what you're dealing with.</p>
+  <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">Start a Conversation</a>
+</div>

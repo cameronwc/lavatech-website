@@ -1,0 +1,128 @@
+---
+layout: default
+title: null
+permalink: /
+description: "LavaTech Solutions — your local tech partner in Lava Hot Springs, Idaho. 3D printing, Starlink installation, computer repair, WiFi troubleshooting, and IT support."
+---
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <p class="hero-location">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Lava Hot Springs, Idaho
+    </p>
+    <h1 class="hero-title">Local Tech Solutions<br>for <span class="text-accent">Every Problem</span></h1>
+    <p class="hero-subtitle">3D printing, Starlink installation, computer repair, and IT support — right here in Lava Hot Springs. No more driving to the city for tech help.</p>
+    <div class="hero-actions">
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Get a Free Quote</a>
+      <a href="{{ '/services/' | relative_url }}" class="btn btn-outline-light btn-lg">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview -->
+<section class="section services-overview">
+  <div class="container">
+    <div class="section-header">
+      <h2>What We Do</h2>
+      <p>Technology services tailored for Lava Hot Springs and the surrounding area.</p>
+    </div>
+    <div class="services-grid">
+      {% for service in site.data.services %}
+        {% include services-card.html service=service %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Why LavaTech -->
+<section class="section why-lavatech">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why LavaTech?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>The Only Game in Town</h3>
+        <p>No other tech services provider operates in Lava Hot Springs. We're here so you don't have to drive to Pocatello or Idaho Falls for help.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Personal Service</h3>
+        <p>You're not a ticket number. You'll work directly with the person fixing your tech — someone who lives and works in your community.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Broad Expertise</h3>
+        <p>From 3D printing to Starlink to computer repair — we handle the full range of tech problems. If it plugs in or connects, we can help.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <h3>Fair, Transparent Pricing</h3>
+        <p>Every job is custom quoted upfront. No hidden fees, no surprises. You'll know what you're paying before any work begins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials / Social Proof -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>What People Are Saying</h2>
+    </div>
+    <div class="testimonials-grid">
+      <!-- PLACEHOLDER: Replace with real testimonials -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>
+          <p>"PLACEHOLDER — Replace with a real customer testimonial about a service experience. Something about how convenient it was to have local tech support."</p>
+        </blockquote>
+        <div class="testimonial-author">
+          <strong>— Customer Name</strong>
+          <span>Local Business Owner</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>
+          <p>"PLACEHOLDER — Replace with a real customer testimonial. Something about Starlink installation or computer repair quality and turnaround time."</p>
+        </blockquote>
+        <div class="testimonial-author">
+          <strong>— Customer Name</strong>
+          <span>Lava Hot Springs Resident</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>
+          <p>"PLACEHOLDER — Replace with a real customer testimonial. Something about 3D printing or general IT support experience."</p>
+        </blockquote>
+        <div class="testimonial-author">
+          <strong>— Customer Name</strong>
+          <span>Lava Hot Springs Resident</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="section cta-banner">
+  <div class="container">
+    <h2>Ready to Solve Your Tech Problem?</h2>
+    <p>Get in touch for a free, no-obligation quote. We're right here in Lava Hot Springs.</p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-lg">Contact Us Today</a>
+  </div>
+</section>

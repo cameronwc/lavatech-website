@@ -1,0 +1,61 @@
+# Site Settings
+title: "LavaTech Solutions"
+description: "Local tech services in Lava Hot Springs, Idaho — 3D printing, Starlink installation, computer repair, WiFi troubleshooting, and IT support."
+url: "https://lavatech.solutions"
+baseurl: ""
+lang: "en"
+
+# Business Info
+email: "info@lavatech.solutions"
+phone: "(208) 555-0123" # PLACEHOLDER — replace with real phone number
+location: "Lava Hot Springs, Idaho"
+founded: 2026
+
+# Social Media — PLACEHOLDER URLs — replace with real profiles
+social:
+  facebook: "https://facebook.com/lavatechsolutions"
+  instagram: "https://instagram.com/lavatechsolutions"
+  linkedin: "https://linkedin.com/company/lavatechsolutions"
+
+# Build Settings
+markdown: kramdown
+permalink: /blog/:year/:month/:title/
+
+# Collections
+collections:
+  case_studies:
+    output: true
+    permalink: /case-studies/:path/
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "LavaTech Solutions"
+  - scope:
+      path: ""
+      type: "case_studies"
+    values:
+      layout: "case-study"
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules

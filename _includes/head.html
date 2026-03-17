@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="author" content="{{ site.title }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<!-- PLACEHOLDER: Add og:image once logo/social image is ready -->
+<!-- <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | absolute_url }}"> -->
+
+<!-- Fonts: Inter (body) + Poppins (headings) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- PLACEHOLDER: Add favicon once logo is ready -->
+<!-- <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}"> -->
+
+{% seo %}
+
+<!-- TODO: Replace UA-XXXXXXXXX-X with your Google Analytics tracking ID -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script> -->

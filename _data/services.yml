@@ -1,0 +1,44 @@
+- title: "3D Printing"
+  icon: "printer-3d"
+  description: "Custom 3D prints for any project — prototyping, replacement parts, creative designs, and functional components. From concept to finished product, all done locally."
+  features:
+    - "Custom prints from your designs or ours"
+    - "Rapid prototyping for local businesses"
+    - "Replacement parts and repair components"
+    - "Multiple materials and finishes available"
+
+- title: "Starlink Installation & Support"
+  icon: "satellite"
+  description: "Get connected with Starlink satellite internet. We handle the full installation, optimal dish placement, and ongoing support to keep you online in rural Idaho."
+  features:
+    - "Professional dish mounting and alignment"
+    - "Optimal placement for best signal"
+    - "Router setup and network configuration"
+    - "Ongoing troubleshooting and support"
+
+- title: "Computer Repair"
+  icon: "computer"
+  description: "From slow performance to hardware failures, we diagnose and fix computers so you don't have to drive to Pocatello or Idaho Falls. Fast turnaround, fair pricing."
+  features:
+    - "Hardware diagnostics and repair"
+    - "Virus and malware removal"
+    - "Data recovery and backup"
+    - "Performance optimization and upgrades"
+
+- title: "WiFi Troubleshooting & Network Setup"
+  icon: "wifi"
+  description: "Dead zones? Slow speeds? Unreliable connections? We'll diagnose your WiFi issues and set up a network that actually works throughout your home or business."
+  features:
+    - "WiFi dead zone elimination"
+    - "Network design and installation"
+    - "Speed optimization"
+    - "Mesh network and extender setup"
+
+- title: "General IT Support & Problem Solving"
+  icon: "tools"
+  description: "Technology problem that doesn't fit a neat category? That's our specialty. We solve the tech issues that nobody else in the area can help with."
+  features:
+    - "Smart home device setup"
+    - "Software installation and configuration"
+    - "Tech consulting for small businesses"
+    - "If it plugs in or connects, we can help"

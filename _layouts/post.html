@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="blog-post">
+  <header class="post-hero">
+    <div class="container">
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {% if page.author %}
+          <span class="meta-sep">&middot;</span>
+          <span class="post-author">{{ page.author }}</span>
+        {% endif %}
+        {% if page.categories.size > 0 %}
+          <span class="meta-sep">&middot;</span>
+          <span class="post-categories">
+            {% for cat in page.categories %}
+              <span class="category-tag">{{ cat }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </div>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="post-body">
+      {{ content }}
+    </div>
+
+    <nav class="post-nav">
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}" class="post-nav-prev">
+          &larr; {{ page.previous.title }}
+        </a>
+      {% endif %}
+      {% if page.next.url %}
+        <a href="{{ page.next.url | relative_url }}" class="post-nav-next">
+          {{ page.next.title }} &rarr;
+        </a>
+      {% endif %}
+    </nav>
+  </div>
+</article>
