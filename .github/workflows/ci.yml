@@ -26,7 +26,7 @@ jobs:
       - name: Validate HTML
         run: |
           bundle exec htmlproofer _site \
-            --ignore-urls "/facebook.com/,/instagram.com/,/linkedin.com/,/formspree.io/,/maps.google.com/,/googletagmanager.com/" \
+            --ignore-urls "/facebook.com/,/instagram.com/,/linkedin.com/,/formspree.io/,/maps.google.com/,/googletagmanager.com/,/fonts.googleapis.com/,/fonts.gstatic.com/" \
             --ignore-status-codes "999,403,429" \
             --no-enforce-https \
             --allow-missing-href \

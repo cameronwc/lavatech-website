@@ -13,7 +13,7 @@ bundle install                        # Install Ruby dependencies
 bundle exec jekyll serve              # Run local dev server at http://localhost:4000
 bundle exec jekyll build              # Build static site to _site/
 bundle exec htmlproofer _site \       # Validate HTML links, images, scripts
-  --ignore-urls "/facebook.com/,/instagram.com/,/linkedin.com/,/formspree.io/,/maps.google.com/,/googletagmanager.com/" \
+  --ignore-urls "/facebook.com/,/instagram.com/,/linkedin.com/,/formspree.io/,/maps.google.com/,/googletagmanager.com/,/fonts.googleapis.com/,/fonts.gstatic.com/" \
   --ignore-status-codes "999,403,429" \
   --no-enforce-https --allow-missing-href \
   --swap-urls "^https\://lavatech\.solutions:" \
