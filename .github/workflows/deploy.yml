@@ -36,7 +36,7 @@ jobs:
             --ignore-status-codes "999,403,429" \
             --no-enforce-https \
             --allow-missing-href \
-            --swap-urls "^https\://lavatech\.solutions:" \
+            --swap-urls "^https\://lavatech\.solutions:,^/lavatech-website:" \
             --checks Links,Images,Scripts
 
       - name: Upload Pages artifact

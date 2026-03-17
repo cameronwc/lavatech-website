@@ -16,7 +16,7 @@ bundle exec htmlproofer _site \       # Validate HTML links, images, scripts
   --ignore-urls "/facebook.com/,/instagram.com/,/linkedin.com/,/formspree.io/,/maps.google.com/,/googletagmanager.com/,/fonts.googleapis.com/,/fonts.gstatic.com/" \
   --ignore-status-codes "999,403,429" \
   --no-enforce-https --allow-missing-href \
-  --swap-urls "^https\://lavatech\.solutions:" \
+  --swap-urls "^https\://lavatech\.solutions:,^/lavatech-website:" \
   --checks Links,Images,Scripts
 ```
 
